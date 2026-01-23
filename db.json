@@ -1,0 +1,410 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Organic Whole Milk",
+      "category": "Dairy",
+      "price": 65,
+      "discount": 0,
+      "stock": 35,
+      "description": "Fresh organic whole milk, 1L. Farm-fresh from local dairies. Pasteurized for safety. Rich in calcium and vitamin D. No added preservatives.",
+      "imageUrl": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Fresh Orange Juice",
+      "category": "Beverages",
+      "price": 145,
+      "discount": 15,
+      "stock": 40,
+      "description": "100% pure fresh-squeezed orange juice, 1L. No added sugar or preservatives. Rich in Vitamin C and potassium. Cold-pressed for maximum nutrition.",
+      "imageUrl": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Multigrain Bread",
+      "category": "Bakery",
+      "price": 55,
+      "discount": 5,
+      "stock": 30,
+      "description": "Artisan multigrain bread, 400g. Freshly baked daily. Contains oats, flax, and whole wheat. High in fiber. Perfect for breakfast and sandwiches.",
+      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 7,
+      "name": "Free-Range Organic Eggs",
+      "category": "Dairy",
+      "price": 135,
+      "discount": 10,
+      "stock": 45,
+      "description": "Free-range organic eggs, 6 pack. From happy, cage-free hens. Rich golden yolks. No antibiotics or hormones. Grade A quality.",
+      "imageUrl": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 8,
+      "name": "Premium Chicken Breast",
+      "category": "Meat",
+      "price": 420,
+      "discount": 15,
+      "stock": 25,
+      "description": "Boneless, skinless chicken breast, 1 kg. Free-range, hormone-free poultry. Lean protein source. Perfect for grilling, baking, and stir-fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 9,
+      "name": "Ripe Hass Avocado",
+      "category": "Vegetables",
+      "price": 99,
+      "discount": 0,
+      "stock": 45,
+      "description": "Premium Hass avocados, 3 pcs. Creamy, buttery texture. Rich in healthy fats and potassium. Perfect for guacamole, toast, and salads. Perfectly ripe.",
+      "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 10,
+      "name": "Fresh Yellow Bananas",
+      "category": "Fruits",
+      "price": 55,
+      "discount": 5,
+      "stock": 120,
+      "description": "Fresh ripe yellow bananas, 1 kg. High in potassium and natural energy. Perfect for smoothies, baking, and snacking. No artificial ripening.",
+      "imageUrl": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 11,
+      "name": "Organic Carrots",
+      "category": "Vegetables",
+      "price": 65,
+      "discount": 0,
+      "stock": 55,
+      "description": "Sweet organic carrots, 1 kg. Crunchy and vitamin A rich. Excellent for eyesight and immunity. Perfect for raw salads, soups, and juicing.",
+      "imageUrl": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 12,
+      "name": "Golden Potatoes",
+      "category": "Vegetables",
+      "price": 48,
+      "discount": 0,
+      "stock": 95,
+      "description": "Versatile golden potatoes, 1 kg. Waxy texture, perfect for boiling and roasting. Fresh farm-sourced. Ideal for fries, mash, and curries.",
+      "imageUrl": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 15,
+      "name": "Atlantic Salmon Fillet",
+      "category": "Meat",
+      "price": 899,
+      "discount": 10,
+      "stock": 18,
+      "description": "Fresh wild-caught Atlantic salmon fillet, 500g. Rich in omega-3 fatty acids. Excellent source of protein. Sushi-grade quality. Flash-frozen.",
+      "imageUrl": "https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 16,
+      "name": "Lean Ground Beef",
+      "category": "Meat",
+      "price": 520,
+      "discount": 12,
+      "stock": 30,
+      "description": "Premium lean ground beef, 1 kg. 93% lean, 7% fat. Perfect for burgers, tacos, and meatballs. USDA certified. Grass-fed available.",
+      "imageUrl": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 18,
+      "name": "Homemade Tomato Sauce",
+      "category": "Pantry",
+      "price": 165,
+      "discount": 8,
+      "stock": 50,
+      "description": "Premium marinara sauce, 500g jar. Made with fresh tomatoes and herbs. No artificial preservatives. Perfect for pasta, pizza, and dipping.",
+      "imageUrl": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=400&q=80"
+    },
+    {
+      "id": 19,
+      "name": "Premium Coffee Beans",
+      "category": "Beverages",
+      "price": 499,
+      "discount": 12,
+      "stock": 40,
+      "description": "Medium roast whole bean coffee, 500g. Single-origin Arabica beans. Rich, smooth flavor with chocolate notes. Perfect for espresso and drip coffee.",
+      "imageUrl": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=400&q=80"
+    }
+  ],
+  "categories": [
+    "Vegetables",
+    "Fruits",
+    "Dairy",
+    "Bakery",
+    "Beverages",
+    "Grains",
+    "Meat",
+    "Pantry"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@grocery.com",
+      "role": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "user@grocery.com",
+      "role": "user",
+      "password": "user"
+    }
+  ],
+  "orders": [
+    {
+      "id": 101,
+      "userId": 2,
+      "date": "2024-12-15T10:30:00.000Z",
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "price": 45,
+          "productName": "Fresh Spinach Leaves",
+          "imageUrl": "assets/images/spinach.png"
+        },
+        {
+          "productId": 4,
+          "quantity": 1,
+          "price": 199,
+          "productName": "Crisp Fuji Apples",
+          "imageUrl": "assets/images/fuji-apples.png"
+        },
+        {
+          "productId": 7,
+          "quantity": 1,
+          "price": 135,
+          "productName": "Free-Range Organic Eggs",
+          "imageUrl": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 424,
+      "status": "shipped",
+      "shippingAddress": "123 Main Street, New York, NY 10001"
+    },
+    {
+      "id": 102,
+      "userId": 2,
+      "date": "2024-12-16T14:15:00.000Z",
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 1,
+          "price": 280,
+          "productName": "Royal Basmati Rice",
+          "imageUrl": "assets/images/basmati-rice.png"
+        },
+        {
+          "productId": 18,
+          "quantity": 1,
+          "price": 165,
+          "productName": "Homemade Tomato Sauce",
+          "imageUrl": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 17,
+          "quantity": 2,
+          "price": 135,
+          "productName": "Italian Spaghetti Pasta",
+          "imageUrl": "https://images.unsplash.com/photo-1598449356475-b9f71db7d847?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 715,
+      "status": "shipped",
+      "shippingAddress": "456 Oak Avenue, Los Angeles, CA 90001"
+    },
+    {
+      "id": 103,
+      "userId": 2,
+      "date": "2024-12-17T09:45:00.000Z",
+      "items": [
+        {
+          "productId": 5,
+          "quantity": 2,
+          "price": 145,
+          "productName": "Fresh Orange Juice",
+          "imageUrl": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 6,
+          "quantity": 1,
+          "price": 55,
+          "productName": "Multigrain Bread",
+          "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 21,
+          "quantity": 1,
+          "price": 380,
+          "productName": "Cheddar Cheese Block",
+          "imageUrl": "https://images.unsplash.com/photo-1452195403471-18f1b247e59e?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 725,
+      "status": "delivered",
+      "shippingAddress": "789 Pine Road, Chicago, IL 60601"
+    },
+    {
+      "id": 104,
+      "userId": 2,
+      "date": "2024-12-18T11:20:00.000Z",
+      "items": [
+        {
+          "productId": 8,
+          "quantity": 1,
+          "price": 420,
+          "productName": "Premium Chicken Breast",
+          "imageUrl": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 9,
+          "quantity": 2,
+          "price": 99,
+          "productName": "Ripe Hass Avocado",
+          "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 13,
+          "quantity": 2,
+          "price": 75,
+          "productName": "Fresh Tomatoes",
+          "imageUrl": "https://images.unsplash.com/photo-1592841494217-b3c3ca199dd5?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 768,
+      "status": "shipped",
+      "shippingAddress": "321 Elm Street, Houston, TX 77001"
+    },
+    {
+      "id": 105,
+      "userId": 2,
+      "date": "2024-12-19T13:00:00.000Z",
+      "items": [
+        {
+          "productId": 15,
+          "quantity": 1,
+          "price": 899,
+          "productName": "Atlantic Salmon Fillet",
+          "imageUrl": "https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 11,
+          "quantity": 1,
+          "price": 65,
+          "productName": "Organic Carrots",
+          "imageUrl": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 12,
+          "quantity": 1,
+          "price": 48,
+          "productName": "Golden Potatoes",
+          "imageUrl": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 1012,
+      "status": "pending",
+      "shippingAddress": "654 Maple Drive, Phoenix, AZ 85001"
+    },
+    {
+      "id": 106,
+      "userId": 2,
+      "date": "2024-12-20T08:30:00.000Z",
+      "items": [
+        {
+          "productId": 3,
+          "quantity": 2,
+          "price": 65,
+          "productName": "Organic Whole Milk",
+          "imageUrl": "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 14,
+          "quantity": 1,
+          "price": 129,
+          "productName": "Fresh Strawberries",
+          "imageUrl": "https://images.unsplash.com/photo-1584353282868-40fdd2daf4e1?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 19,
+          "quantity": 1,
+          "price": 499,
+          "productName": "Premium Coffee Beans",
+          "imageUrl": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 758,
+      "status": "delivered",
+      "shippingAddress": "147 Birch Lane, San Antonio, TX 78201"
+    },
+    {
+      "id": 107,
+      "userId": 2,
+      "date": "2024-12-21T15:45:00.000Z",
+      "items": [
+        {
+          "productId": 16,
+          "quantity": 1,
+          "price": 520,
+          "productName": "Lean Ground Beef",
+          "imageUrl": "https://images.unsplash.com/photo-1588168333986-5078d3ae3976?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 10,
+          "quantity": 1,
+          "price": 55,
+          "productName": "Fresh Yellow Bananas",
+          "imageUrl": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 20,
+          "quantity": 1,
+          "price": 450,
+          "productName": "Extra Virgin Olive Oil",
+          "imageUrl": "https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?auto=format&fit=crop&w=400&q=80"
+        }
+      ],
+      "total": 1025,
+      "status": "shipped",
+      "shippingAddress": "963 Spruce Court, San Diego, CA 92101"
+    },
+    {
+      "id": 108,
+      "userId": 2,
+      "date": "2024-12-22T10:00:00.000Z",
+      "items": [
+        {
+          "productId": 22,
+          "quantity": 1,
+          "price": 320,
+          "productName": "Almond Butter",
+          "imageUrl": "https://images.unsplash.com/photo-1599599810694-b5ac4dd64b73?auto=format&fit=crop&w=400&q=80"
+        },
+        {
+          "productId": 1,
+          "quantity": 1,
+          "price": 45,
+          "productName": "Fresh Spinach Leaves",
+          "imageUrl": "assets/images/spinach.png"
+        },
+        {
+          "productId": 4,
+          "quantity": 2,
+          "price": 199,
+          "productName": "Crisp Fuji Apples",
+          "imageUrl": "assets/images/fuji-apples.png"
+        }
+      ],
+      "total": 743,
+      "status": "delivered",
+      "shippingAddress": "258 Cedar Street, Dallas, TX 75201"
+    }
+  ]
+}

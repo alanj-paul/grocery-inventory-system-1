@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="navbar">
+    <span routerLink="/" class="logo">Grocery App</span>
+    <span class="spacer"></span>
+
+    <button mat-button routerLink="/products">Products</button>
+    <button mat-button routerLink="/admin">Admin</button>
+
+    <button mat-icon-button routerLink="/cart">
+        <mat-icon [matBadge]="(cartItemCount$ | async)" [matBadgeHidden]="(cartItemCount$ | async) === 0"
+            matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+</mat-toolbar>

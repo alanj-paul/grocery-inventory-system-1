@@ -1,0 +1,47 @@
+.checkout-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.half-width {
+    flex: 1;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.success-message {
+    text-align: center;
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.success-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+}

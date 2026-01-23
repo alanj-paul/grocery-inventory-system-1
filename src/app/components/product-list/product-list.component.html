@@ -1,0 +1,53 @@
+<div class="product-container">
+    <!-- Filters -->
+    <div class="filters">
+        <mat-form-field appearance="outline">
+            <mat-label>Category</mat-label>
+            <mat-select [(ngModel)]="selectedCategory" (selectionChange)="applyFilter()">
+                <mat-option value="all">All Categories</mat-option>
+                @for (cat of categories; track cat.id) {
+                <mat-option [value]="cat.value">{{cat.name}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+
+        <div class="price-filter">
+            <label>Max Price: {{priceFilter | currency}}</label>
+            <mat-slider [min]="0" [max]="maxPrice" step="1" showTickMarks discrete>
+                <input matSliderThumb [(ngModel)]="priceFilter" (valueChange)="applyFilter()">
+            </mat-slider>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+        @for (product of filteredProducts; track product.id) {
+        <mat-card class="product-card">
+            <img mat-card-image [src]="product.image" [alt]="product.name" class="product-image">
+            <mat-card-header>
+                <mat-card-title>{{product.name}}</mat-card-title>
+                <mat-card-subtitle>{{product.category | titlecase}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="description">{{product.description}}</p>
+                <div class="price-tag">
+                    {{product.price | currency}} / {{product.unit}}
+                </div>
+                <div class="stock-info" [class.low-stock]="product.stock < 10">
+                    Stock: {{product.stock}}
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary" [routerLink]="['/products', product.id]">Details</button>
+                <button mat-raised-button color="accent" (click)="addToCart(product)" [disabled]="product.stock === 0">
+                    Add to Cart
+                </button>
+            </mat-card-actions>
+        </mat-card>
+        } @empty {
+        <div class="no-products">
+            <p>No products found matching your criteria.</p>
+        </div>
+        }
+    </div>
+</div>
