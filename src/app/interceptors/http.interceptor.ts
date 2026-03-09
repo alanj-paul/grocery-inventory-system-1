@@ -1,10 +1,14 @@
 import { HttpInterceptorFn, HttpErrorResponse } from '@angular/common/http';
 import { inject } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { catchError, throwError } from 'rxjs';
+import { catchError, finalize, throwError } from 'rxjs';
+import { LoadingService } from '../services/loading.service';
 
 export const httpInterceptor: HttpInterceptorFn = (req, next) => {
   const snackBar = inject(MatSnackBar);
+  const loadingService = inject(LoadingService);
+
+  loadingService.show();
 
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
@@ -24,6 +28,7 @@ export const httpInterceptor: HttpInterceptorFn = (req, next) => {
       });
 
       return throwError(() => error);
-    })
+    }),
+    finalize(() => loadingService.hide())
   );
 };

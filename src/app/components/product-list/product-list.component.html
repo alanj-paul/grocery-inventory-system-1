@@ -17,11 +17,15 @@
                 <input matSliderThumb [(ngModel)]="priceFilter" (valueChange)="applyFilter()">
             </mat-slider>
         </div>
+
+        <div class="stock-filter">
+            <mat-checkbox [(ngModel)]="inStockOnly">In Stock Only</mat-checkbox>
+        </div>
     </div>
 
     <!-- Product Grid -->
     <div class="product-grid">
-        @for (product of products | productFilter:selectedCategory:priceFilter; track product.id) {
+        @for (product of products | productFilter:selectedCategory:priceFilter:inStockOnly; track product.id) {
         <mat-card class="product-card" [appStockHighlight]="product.stock">
             <img mat-card-image [src]="product.imageUrl" [alt]="product.name" class="product-image">
 
@@ -32,7 +36,8 @@
             <mat-card-content>
                 <p class="description">{{product.description}}</p>
                 <div class="price-tag">
-                    {{product.price | currency}} / {{product.unit}}
+                    {{product.price | currency}} 
+                    <span *ngIf="product.discount && product.discount > 0" [appDiscountHighlight]="product.discount">{{product.discount}}% OFF</span>
                 </div>
                 <div class="stock-info" [class.low-stock]="product.stock < 10">
                     Stock: {{product.stock}}

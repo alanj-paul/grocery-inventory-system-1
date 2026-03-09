@@ -8,12 +8,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
 import { ProductFilterPipe } from '../../pipes/product-filter.pipe';
 import { StockHighlightDirective } from '../../directives/stock-highlight.directive';
+import { DiscountHighlightDirective } from '../../directives/discount-highlight.directive';
+
 
 @Component({
   selector: 'app-product-list',
@@ -28,8 +31,10 @@ import { StockHighlightDirective } from '../../directives/stock-highlight.direct
     MatSelectModule,
     MatInputModule,
     MatSliderModule,
+    MatCheckboxModule,
     ProductFilterPipe,
-    StockHighlightDirective
+    StockHighlightDirective,
+    DiscountHighlightDirective
   ],
 
   templateUrl: './product-list.component.html',
@@ -43,6 +48,7 @@ export class ProductListComponent implements OnInit {
   selectedCategory: string = 'all';
   maxPrice: number = 100;
   priceFilter: number = 100;
+  inStockOnly: boolean = false;
 
   constructor(
     private productService: ProductService,
@@ -68,7 +74,8 @@ export class ProductListComponent implements OnInit {
     this.filteredProducts = this.products.filter(product => {
       const matchCategory = this.selectedCategory === 'all' || product.category === this.selectedCategory;
       const matchPrice = product.price <= this.priceFilter;
-      return matchCategory && matchPrice;
+      const matchStock = this.inStockOnly ? product.stock > 0 : true;
+      return matchCategory && matchPrice && matchStock;
     });
   }
 

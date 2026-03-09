@@ -18,6 +18,7 @@
                 <div class="price-section">
                     <span class="price">{{product.price | currency}}</span>
                     <span class="unit">per {{product.unit}}</span>
+                    <span *ngIf="product.discount && product.discount > 0" [appDiscountHighlight]="product.discount">{{product.discount}}% OFF</span>
                 </div>
 
                 <div class="stock-section" [class.out-of-stock]="product.stock === 0">

@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Product } from '../../models/product.model';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
+import { DiscountHighlightDirective } from '../../directives/discount-highlight.directive';
 
 @Component({
   selector: 'app-product-detail',
@@ -16,7 +17,8 @@ import { CartService } from '../../services/cart.service';
     RouterModule,
     MatButtonModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    DiscountHighlightDirective
   ],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'

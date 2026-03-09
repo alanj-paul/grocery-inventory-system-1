@@ -7,4 +7,6 @@ export interface Product {
   description: string;
   stock: number;
   unit: string;
+  discount?: number;
 }
+
