@@ -12,6 +12,8 @@ import { Product } from '../../models/product.model';
 import { Category } from '../../models/category.model';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
+import { ProductFilterPipe } from '../../pipes/product-filter.pipe';
+import { StockHighlightDirective } from '../../directives/stock-highlight.directive';
 
 @Component({
   selector: 'app-product-list',
@@ -25,8 +27,11 @@ import { CartService } from '../../services/cart.service';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    MatSliderModule
+    MatSliderModule,
+    ProductFilterPipe,
+    StockHighlightDirective
   ],
+
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })

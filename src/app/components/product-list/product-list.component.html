@@ -21,9 +21,10 @@
 
     <!-- Product Grid -->
     <div class="product-grid">
-        @for (product of filteredProducts; track product.id) {
-        <mat-card class="product-card">
-            <img mat-card-image [src]="product.image" [alt]="product.name" class="product-image">
+        @for (product of products | productFilter:selectedCategory:priceFilter; track product.id) {
+        <mat-card class="product-card" [appStockHighlight]="product.stock">
+            <img mat-card-image [src]="product.imageUrl" [alt]="product.name" class="product-image">
+
             <mat-card-header>
                 <mat-card-title>{{product.name}}</mat-card-title>
                 <mat-card-subtitle>{{product.category | titlecase}}</mat-card-subtitle>

@@ -6,6 +6,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CartService } from '../../services/cart.service';
+import { OrderService } from '../../services/order.service';
+import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -28,6 +30,8 @@ export class CheckoutComponent {
   constructor(
     private fb: FormBuilder,
     private cartService: CartService,
+    private orderService: OrderService,
+    private authService: AuthService,
     private router: Router,
     private snackBar: MatSnackBar
   ) {
@@ -42,16 +46,25 @@ export class CheckoutComponent {
 
   onSubmit() {
     if (this.checkoutForm.valid) {
-      if (this.cartService.getItemCount() === 0) {
+      const items = this.cartService.getCartItems();
+      if (items.length === 0) {
         this.snackBar.open('Your cart is empty!', 'Close', { duration: 3000 });
         return;
       }
 
-      // Simulate order placement
-      console.log('Order submitted', this.checkoutForm.value);
-      this.orderPlaced = true;
-      this.cartService.clearCart();
-      this.snackBar.open('Order placed successfully!', 'Close', { duration: 3000 });
+      const order = {
+        ...this.checkoutForm.value,
+        items: items,
+        total: this.cartService.getTotalPrice(),
+        userId: this.authService.getCurrentUser()?.id,
+        date: new Date().toISOString()
+      };
+
+      this.orderService.placeOrder(order).subscribe(() => {
+        this.orderPlaced = true;
+        this.cartService.clearCart();
+        this.snackBar.open('Order placed successfully!', 'Close', { duration: 5000 });
+      });
     }
   }
 

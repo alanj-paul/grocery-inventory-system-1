@@ -1,10 +1,11 @@
 <div class="admin-container">
     <div class="header">
         <h1>Inventory Management</h1>
-        <button mat-raised-button color="primary" (click)="addProduct()">
+        <button mat-raised-button color="primary" (click)="openProductDialog()">
             <mat-icon>add</mat-icon> Add New Product
         </button>
     </div>
+
 
     <table mat-table [dataSource]="products" class="mat-elevation-z2">
 
@@ -55,6 +56,6 @@
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;" [class.row-low-stock]="row.stock === 0"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" [appStockHighlight]="row.stock"></tr>
     </table>
 </div>

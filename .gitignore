@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# project artifacts
+/dist
+/.angular
+/grocery inventory
+
+# compiled output
+/tmp
+/out-tsc
+/bazel-out
+
+# misc
+/.vscode
+/.idea
+.DS_Store
+*.pem
